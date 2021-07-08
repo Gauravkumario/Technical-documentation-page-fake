@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Technical Documentation Page</title>
+	<meta charset="utf-8">
+	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="technical.css">
+	
+</head>
+<body>
+	<nav id="navbar">
+		<header>Python Documentation</header>
+		<ul>
+			<li><a href="#Introduction" class="nav-link">Introduction</a></li>
+			<li><a href="#What_you_should_already_know" class="nav-link">What you should already know</a></li>
+			<li><a href="#JavaScript_and_Java" class="nav-link">JavaScript and Java</a></li>
+			<li><a href="#Hello_world" class="nav-link">Hello world</a></li>
+			<li><a href="#Variables" class="nav-link">Variables</a></li>
+			<li><a href="#Declaring_variables" class="nav-link">Declaring variables</a></li>
+			<li><a href="#Variable_scope" class="nav-link">Variable scope</a></li>
+			<li><a href="#Global_variables" class="nav-link">Global variables</a></li>
+			<li><a href="#Constants" class="nav-link">Constants</a></li>
+			<li><a href="#Data_types" class="nav-link">Data types</a></li>
+			<li><a href="#if...else_statement" class="nav-link">if...else statement</a></li>
+			<li><a href="#while_statement" class="nav-link">while statement</a></li>
+			<li><a href="#Function_declarations" class="nav-link">Function declarations</a></li>
+			<li><a href="#Reference" class="nav-link">Reference</a></li>
+		</ul>
+	</nav>
+
+	<main id="main-doc">
+		<section class="main-section" id="Introduction">
+			<header>Introduction</header>
+			<article>
+				<p>Python is powerful... and fast; plays well with others; runs everywhere; is friendly & easy to learn; is Open.</p>
+				<p>Python can be easy to pick up whether you're a first time programmer or you're experienced with other languages. The following pages are a useful first step to get on your way writing programs with Python!</p>
+				<p>The community hosts conferences and meetups, collaborates on code, and much more. Python's documentation will help you along the way, and the mailing lists will keep you in touch.</p>
+				<p>Python is developed under an OSI-approved open source license, making it freely usable and distributable, even for commercial use. Python's license is administered by the Python Software Foundation.</p>
+			</article>
+		</section>
+		<section class="main-section" id="What_you_should_already_know">
+			<header>What you should already know</header>
+			<article><p>This guide assumes you have the following basic background:</p>
+			<ol>
+				<li>Learn the difference between front-end and back-end</li>
+				<li>Understand what you can do with python</li>
+				<li>Python 2 vs. Python 3 - Know the difference</li>
+				<li>Understand what jobs hire Python developers</li>
+			</ol>
+			</article>
+		</section>
+		<section class="main-section" id="JavaScript_and_Java">
+			<header>JavaScript and Java</header>
+			<article><p>Python is an interpreted, object-oriented, high-level programming language with dynamic semantics. Its high-level built in data structures, combined with dynamic typing and dynamic binding, make it very attractive for Rapid Application Development, as well as for use as a scripting or glue language to connect existing components together. Python's simple, easy to learn syntax emphasizes readability and therefore reduces the cost of program maintenance. Python supports modules and packages, which encourages program modularity and code reuse. The Python interpreter and the extensive standard library are available in source or binary form without charge for all major platforms, and can be freely distributed.</p>
+			<p>Often, programmers fall in love with Python because of the increased productivity it provides. Since there is no compilation step, the edit-test-debug cycle is incredibly fast. Debugging Python programs is easy: a bug or bad input will never cause a segmentation fault. Instead, when the interpreter discovers an error, it raises an exception. When the program doesn't catch the exception, the interpreter prints a stack trace. A source level debugger allows inspection of local and global variables, evaluation of arbitrary expressions, setting breakpoints, stepping through the code a line at a time, and so on. The debugger is written in Python itself, testifying to Python's introspective power. On the other hand, often the quickest way to debug a program is to add a few print statements to the source: the fast edit-test-debug cycle makes this simple approach very effective.</p>
+			</article>
+		</section>
+		<section class="main-section" id="Hello_world">
+			<header>Hello world</header>
+			<article>
+				<p>
+					A simple program that displays “Hello, World!”. It's often used to illustrate the syntax of the language.To understand this example, you should have the knowledge of the following Python programming topics:
+				</p>
+				<p>
+					In this program, we have used the built-in print() function to print the string "Hello, world!" on our screen.By the way, a string is a sequence of characters. In Python, strings are enclosed inside single quotes, double quotes, or triple quotes.
+				</p>
+				<code>
+					Print("Hello World")
+				</code>
+			</article>
+		</section>
+		<section class="main-section" id="Variables">
+			<header>Variables</header>
+			<article>
+				<p>Variables are nothing but reserved memory locations to store values. This means that when you create a variable you reserve some space in memory.</p>
+				<p>A Python identifier must start with a letter, underscore (_), or dollar sign ($); subsequent characters can also be digits (0-9). Because JavaScript is case sensitive, letters include the characters "A" through "Z" (uppercase) and the characters "a" through "z" (lowercase).</p>
+				<p>
+					Based on the data type of a variable, the interpreter allocates memory and decides what can be stored in the reserved memory. Therefore, by assigning different data types to variables, you can store integers, decimals or characters in these variables.
+				</p>
+			</article>
+		</section>
+		<section class="main-section" id="Declaring_variables">
+			<header>Declaring variables</header>
+			<article>
+				<p>Python is completely object oriented, and not "statically typed". You do not need to declare variables before using them, or declare their type. Every variable in Python is an object.</p>
+				<p>Python supports two types of numbers - integers(whole numbers) and floating point numbers(decimals). (It also supports complex numbers, which will not be explained in this tutorial).</p>
+			</article>
+		</section><section class="main-section" id="Variable_scope">
+			<header>Variable scope</header>
+			<article>
+				<p>
+					A variable is only available from inside the region it is created. This is called scope.
+				</p>
+				<p>
+					A variable created inside a function belongs to the local scope of that function, and can only be used inside that function.
+				</p>
+				<p>
+					A variable created in the main body of the Python code is a global variable and belongs to the global scope.Global variables are available from within any scope, global and local.
+				</p>
+				<p>
+					If you need to create a global variable, but are stuck in the local scope, you can use the global keyword.The global keyword makes the variable global.
+				</p>
+			</article>
+		</section>
+		<section class="main-section" id="Global_variables">
+			<header>Global variables</header>
+			<article>
+				<p>In Python, a variable declared outside of the function or in global scope is known as a global variable. This means that a global variable can be accessed inside or outside of the function.</p>
+				<p>
+					A variable declared inside the function's body or in the local scope is known as a local variable.
+				</p>
+			</article>
+		</section>
+		<section class="main-section" id="Constants">
+			<header>Constants</header>
+			<article>
+				<p>
+					A constant is a type of variable whose value cannot be changed. It is helpful to think of constants as containers that hold information which cannot be changed later.
+				</p>
+				<p>
+					You can think of constants as a bag to store some books which cannot be replaced once placed inside the bag.
+				</p>
+				<p>
+					In Python, constants are usually declared and assigned in a module. Here, the module is a new file containing variables, functions, etc which is imported to the main file. Inside the module, constants are written in all capital letters and underscores separating the words.
+				</p>
+			</article>
+		</section>
+		<section class="main-section" id="Data_types">
+			<header>Data types</header>
+			<article>
+				<p>
+					Every value in Python has a datatype. Since everything is an object in Python programming, data types are actually classes and variables are instance (object) of these classes.
+				</p>
+				<p>
+					You’ll learn about several basic numeric, string, and Boolean types that are built into Python. By the end of this tutorial, you’ll be familiar with what objects of these types look like, and how to represent them
+				</p>
+				<code>
+					data = 5
+				</code>
+			</article>
+		</section>
+		<section class="main-section" id="if...else_statement">
+			<header>if...else statement</header>
+			<article>
+				<p>
+					if statement is the most simple decision making statement. It is used to decide whether a certain statement or block of statements will be executed or not i.e if a certain condition is true then a block of statement is executed otherwise not.
+				</p>
+				<p>
+					The if statement alone tells us that if a condition is true it will execute a block of statements and if the condition is false it won’t. But what if we want to do something else if the condition is false. Here comes the else statement. We can use the else statement with if statement to execute a block of code when the condition is false.
+				</p>
+				<code>
+					if():
+					{
+						statement
+					}
+					else:
+					{
+						statement
+					}
+				</code>
+			</article>
+		</section>
+		<section class="main-section" id="while_statement">
+			<header>while statement</header>
+			<article>
+				<p>
+					The while loop in Python is used to iterate over a block of code as long as the test expression (condition) is true.We generally use this loop when we don't know the number of times to iterate beforehand.	
+				</p>
+				<p>
+					In the while loop, test expression is checked first. The body of the loop is entered only if the test_expression evaluates to True. After one iteration, the test expression is checked again. This process continues until the test_expression evaluates to False
+				</p>
+				<code>
+					While True:
+					{
+						given statement
+					}
+				</code>
+			</article>
+		</section>
+		<section class="main-section" id="Function_declarations">
+			<header>Function declarations</header>
+			<article>
+				<p>
+					A function is a block of organized, reusable code that is used to perform a single, related action. Functions provide better modularity for your application and a high degree of code reusing.As you already know, Python gives you many built-in functions like print(), etc. but you can also create your own functions. These functions are called user-defined functions.
+				</p>
+				<p>You can define functions to provide the required functionality. Here are simple rules to define a function in Python.</p>
+				<ul>
+					<li>Function blocks begin with the keyword def followed by the function name and parentheses ( ( ) ).</li>
+					<li>Any input parameters or arguments should be placed within these parentheses. You can also define parameters inside these parentheses.</li>
+					<li>The first statement of a function can be an optional statement - the documentation string of the function or docstring.</li>
+					<li>The code block within every function starts with a colon (:) and is indented.</li>
+					<li>The statement return [expression] exits a function, optionally passing back an expression to the caller. A return statement with no arguments is the same as return None.</li>
+				</ul>
+				<code>
+					def fuction_name():
+					{
+						statement:
+					}
+				</code>
+			</article>
+		</section>
+		<section class="main-section" id="Reference">
+			<header>Reference</header>
+			<article>
+				<ul>
+					<li>All the documentation in this page is taken from internet source. <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide"
+            target="_blank">MDN</a></li>
+				</ul>
+			</article>
+		</section>
+	</main>
+</body>
+</html>
